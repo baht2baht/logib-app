@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/profile" class="nav-link">Profile</a>
+            </li>
+            <% if (!data.loginStatus) { %>
+            <li class="nav-item">
+                <a href="/register" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+                <a href="/login" class="nav-link">Login</a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a href="/logout" class="nav-link">Logout</a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</nav>
