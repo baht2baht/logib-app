@@ -1,3 +1,5 @@
+// My NodeJS Login App
+
 const express = require("express");
 const app = express();
 const homeController = require("./controllers/home-controller");
